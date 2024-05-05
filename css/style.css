@@ -1,0 +1,221 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  font-size: 18px;
+  font-weight: 400;
+  height: 100%;
+  line-height: 1;
+}
+
+@font-face {
+  font-family: "MerriweatherRegular";
+  src: url("../fonts/Merriweather-Regular.ttf");
+}
+@font-face {
+  font-family: "MerriweatherBold";
+  src: url("../fonts/Merriweather-Bold.ttf");
+}
+@font-face {
+  font-family: "GolosText400";
+  src: url("../fonts/GolosText-Regular.ttf");
+}
+@font-face {
+  font-family: "GolosText500";
+  src: url("../fonts/GolosText-Medium.ttf");
+}
+@font-face {
+  font-family: "GolosText600";
+  src: url("../fonts/GolosText-SemiBold.ttf");
+}
+@font-face {
+  font-family: "GolosText700";
+  src: url("../fonts/GolosText-Bold.ttf");
+}
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+._container {
+  max-width: 1413px;
+  margin: 0 auto;
+
+}
+
+header {
+  /* 1920 */
+  height: 700px;
+  background: #E9DED4;
+  font-family: Merriweather;
+
+}
+
+header .logo_block{
+  display: flex;
+  flex-direction: row;
+  padding: 26px 0;
+}
+
+header .logo_image {
+  color: #595653;
+}
+header .logo_text {
+  height: 36px;
+  font-family: 'GolosText700';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16.6513px;
+  line-height: 108%;
+  text-transform: uppercase;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  padding-left: 6px;
+  color: #595653;
+}
+
+header .content_block {
+  display: flex;
+  flex-direction: column;
+}
+
+header .header_content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+header .header_text .main_text {
+  display: flex;
+  flex-direction: column;
+  width: 542px;
+  font-family: 'MerriweatherRegular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 110%;
+  text-transform: uppercase;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #313131;
+}
+
+header .header_text .main_text span {
+  width: 542px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 110%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+header .header_subtext {
+  padding-top: 24px;
+  width: 542px;
+  font-family: 'GolosText400';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+  color: #313131;
+}
+
+header .ellipse {
+  display: flex;
+  flex-direction: column;
+}
+
+header .ellipse svg {
+  width: 660px;
+  height: 660px;
+}
+
+header .header_bottoms {
+  width: 542px;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+header .header_bottoms .sign {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 263px;
+  height: 72px;
+  background: #1F1F1F;
+  border-radius: 66px;
+  margin-right: 16px;
+  font-family: 'GolosText500';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+header .header_bottoms .sign:hover {
+  background-color: #FBCE51;
+  color: #1F1F1F;
+}
+
+header .header_bottoms .about {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 263px;
+  height: 72px;
+  background: transparent;
+  border: 2px solid #1F1F1F;
+  border-radius: 66px;
+  font-family: 'GolosText500';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: #1F1F1F;
+}
+
+header .header_bottoms .about:hover {
+  background: #1F1F1F;
+  color: #FFFFFF;
+}
+
+header .header_content .ellipse .chess {
+  position: absolute;
+  transform: rotate(2.59deg);
+  z-index: 5;
+}
+
+header .header_content .ellipse .chess_2 {
+  position: absolute;
+  transform: rotate(-3.59deg);
+  z-index: 5;
+}
